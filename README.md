@@ -22,9 +22,8 @@ Is recommended avoid abreviations, use good names.
 ## Resource Params
 In many implementations, you will define a resource(url), with static content, and in a part, a variable value. We call this, as parameter. For i.e, in resource /users/233, the value 233 is a value to a param. The definitiion of this in code, is anything like this:
 
-```http
-/users/:id
-where :id is our param
+```
+/users/:id - where :id is our param
 ```
 
 Your resource can has what params you need, but, take careful, basically, resources need be easy to remember, try organize your resources with minimalism.
@@ -55,8 +54,9 @@ DELETE /users/:id
 
 Exists other verbs, like:
 
-```
-OPTIONS /users/ - lets you find out what verbs are supported, e.g. 'is the document deletable'
+```http
+lets you find out what verbs are supported, e.g. 'is the document deletable'
+OPTIONS /users/
 ```
 
 ## Status Code
