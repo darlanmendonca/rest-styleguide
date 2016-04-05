@@ -4,33 +4,49 @@ The purpose of this repo, is guide developers, to follow (really) a Restful API.
 
 The spec of Rest is:
 
-## Resources
+## Resources (urls)
 
-Think in resources, as be our urls. Each url need be so clear, to easy compreension. Every developer, need read and understand what the resource offer as entity.
+Think in resources, as our urls. Each url need be clear, to easy understanding. Take care to named your resources, they are entities, and a hearth of your API.
 
 Are examples:
 
 ```http
 /users
 /users/233
+/users/223/books
 /partners
 /products
 ```
 
-Is recommended avoid abreviations, use good names.
-
 ## Resource Params
-In many implementations, you will define a resource(url), with static content, and in a part, a variable value. We call this, as parameter. For i.e, in resource /users/233, the value 233 is a value to a param. The definitiion of this in code, is anything like this:
+
+In many implementations, you will define a resource(url), where part of this is a variable value. We call this parameter, or just param. For i.e, in resource /users/233, the value 233 is a value from param id. The definitiion of this in code, is anything like this:
 
 ```
-/users/:id - where :id is our param
+/users/:id
 ```
 
-Your resource can has what params you need, but, take careful, basically, resources need be easy to remember, try organize your resources with minimalism.
+## Verbs(actions)
 
-## Verbs
+Verbs are the http methods. You can think in their like actions.
+Actions because their define what you want do to when you request a resource. Below you find what each method is used in Restful API's
 
-Verbs are http protocols, and you can think about their, like actions. Below, examples of simple operations, like a CRUD (Create, Read, Update, Delete).
+```
+GET - just read data, for e.g, when you get a list of users, or data from a single user
+
+POST - used to create new things, for e.g, to create a new user, or add a new item to a entity
+
+PATCH - used to update partial data from a entity, e.g., update the lastname of an user, or just a email.
+
+PUT - used to update all data from a entity
+
+DELETE - to remove a entire entity, for e.g., remove the user from system.
+
+OPTIONS - lets you find out what verbs are supported, e.g. 'is the document deletable'
+
+```
+
+And below, complete examples, of requests:
 
 ```http
 return a list of users
@@ -50,13 +66,10 @@ PUT /users/:id
 
 delete a user
 DELETE /users/:id
-```
 
-Exists other verbs, like:
-
-```http
-lets you find out what verbs are supported, e.g. 'is the document deletable'
-OPTIONS /users/
+check what methods are supported to a resource
+OPTIONS /users
+OPTIONS /users/:id
 ```
 
 ## Status Code
