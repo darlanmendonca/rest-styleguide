@@ -42,7 +42,7 @@ PUT - used to update all data from a entity
 
 DELETE - to remove a entire entity, for e.g., remove the user from system.
 
-OPTIONS - lets you find out what verbs are supported, e.g. 'is the document deletable'
+OPTIONS - return what methods are supported by resource, e.g. 'is the document deletable'
 
 ```
 
@@ -74,18 +74,71 @@ OPTIONS /users/:id
 
 ## Status Code
 
-Status code, be a part important from server response. With their, we can check what server understand about our request. Status code can be found in header of request.
+Status code, be a important part from server response. With their, we can check what server understand about our request. Status code can be found in header of request.
 
 Basically, we can classify status codes in groups, where each group be:
 
 ```
 100, 101 - meta stuff, don't worry about it
 2xx - success
-3xx - redirection, further actio may be needed
+3xx - redirection, further action may be needed
 4xx - client error, user screw up
 5xx - server error, server screw up
 ```
 
+## Status Code 2xx (Success)
 
+Like title say, 2xx group, report to you, an action successful. Following, you see details about each status.
+
+##### 200 - Ok
+
+Your request are completely successfull, and you will receive data what you want. I.e.
+
+``` 
+GET /users/123
+
+response
+200
+{id: 123, firstname: 'Darlan', lastname: 'Mendonça'}
+```
+
+##### 201 - Created
+
+Ok, sucess, and we can create what you requested. In body of response, you will receive too the id of new resource created. 
+
+``` 
+POST /users
+
+response
+201
+{id: 123}
+```
+
+##### 204 - No Content
+
+We understand what you requested, but dont have data in a response to you. I.e.
+
+``` 
+GET /users
+
+response
+204
+[]
+```
+
+##### 206 - Partial Content
+
+You see in response, just part of an collection.
+
+``` 
+GET /users?limit=2
+
+response
+206
+[
+  {id: 123, firstname: 'Darlan', lastname: 'Mendonça'}
+  {id: 124, firstname: 'Clara', lastname: 'Lúcia'}
+]
+```
 
 
