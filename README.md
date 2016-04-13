@@ -86,59 +86,6 @@ Basically, we can classify status codes in groups, where each group be:
 5xx - server error, server screw up
 ```
 
-## Status Code 2xx (Success)
-
-Like title say, 2xx group, report to you, an action successful. Following, you see details about each status.
-
-##### 200 - Ok
-
-Your request are completely successfull, and you will receive data what you want. I.e.
-
-```http
-GET /users/123
-
-response
-200
-{"id": "123", "firstname": "Darlan", "lastname": "Mendonça"}
-```
-
-##### 201 - Created
-
-Ok, sucess, and we can create what you requested. In body of response, you will receive too the id of new resource created. 
-
-```http
-POST /users
-
-response
-201
-{"id": "123"}
-```
-
-##### 204 - No Content
-
-We understand what you requested, but dont have data in a response to you. I.e.
-
-```http
-GET /users
-
-response
-204
-[]
-```
-
-##### 206 - Partial Content
-
-You see in response, just part of an collection.
-
-```http
-GET /users?limit=2
-
-response
-206
-[
-  {"id": "123", "firstname": "Darlan", "lastname: 'Mendonça"}
-  {"id": "124", "firstname": "Clara", "lastname": "Lúcia"}
-]
-```
+[See more](https://github.com/darlanmendonca/rest/wiki/Status-Code-2xx)
 
 
