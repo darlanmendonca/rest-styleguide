@@ -6,21 +6,23 @@ The spec of Rest is:
 
 ## Resources (urls)
 
-Think in resources, as our urls. Each url need be clear, to easy understanding. Take care to named your resources, they are entities, and a hearth of your API.
+Think in resources, as our urls. Each url need be clear, to easy understanding. Take care to named your resources, they are the hearth of your API. 
 
-Are examples:
+If you read a url and dont understand, or if you dont can remember in your mind, you probably didn't choose a good name.
 
-```http
-/users
-/users/233
-/users/223/books
-/partners
-/products
+Are examples of resources:
+
+```js
+'/users' // should do something with users
+'/users/233' // should do something with a user identified by id 233 
+'/users/223/books' // should make something with books of user 223
+'/partners' // should do something with partners
+'/products' // should do something with products
 ```
 
-## Resource Params
+## Params
 
-In many implementations, you will define a resource(url), where part of this is a variable value. We call this parameter, or just param. For i.e, in resource /users/233, the value 233 is a value from param id. The definitiion of this in code, is anything like this:
+In many implementations, you will define a resource(url), where part of this is a variable value. We call this parameter, or just param. For e.g., in resource /users/233, the value 233 is a value from param id. The definitiion of this in code, is anything like this:
 
 ```
 /users/:id
