@@ -30,48 +30,41 @@ In many implementations, you will define a resource(url), where part of this is 
 
 ## Verbs(actions)
 
-Verbs are the http methods. You can think in their like actions.
-Actions because their define what you want do to when you request a resource. Below you find what each method is used in Restful API's
+Verbs are the http methods. You can think of them as 'actions'.
+Actions, because these define what you want to do. Below you find what each method is used in Restful API's
 
-```
-GET - just read data, for e.g, when you get a list of users, or data from a single user
+```js
+'GET' // just read data, for e.g, when you want retrieve a list of users, or data from a single user
 
-POST - used to create new things, for e.g, to create a new user, or add a new item to a entity
+'POST' // used to create new things, e.g, create a new user, or add a new item to a entity, e.g., add a new book to a user.
 
-PATCH - used to update partial data from a entity, e.g., update the lastname of an user, or just a email.
+'PATCH' // used to update partial data from a entity, e.g., update the lastname of an user, or just a email.
 
-PUT - used to update all data from a entity
+'PUT' // used to update all data from a entity
 
-DELETE - to remove a entire entity, for e.g., remove the user from system.
+'DELETE' // to remove a entire entity, for e.g., remove the user from system.
 
-OPTIONS - return what methods are supported by resource, e.g. 'is the document deletable'
-
+'OPTIONS' // return what methods are supported by resource, e.g. 'is the document deletable?'
 ```
 
 And below, complete examples, of requests:
 
 ```http
-return a list of users
-GET /users
+'GET /users' // return a list of users
 
-return data of a single user
-GET /users/:id
+'GET /users/:id' // return data of a single user
 
-create a user
-POST /users
+'POST /users' // create a user
 
-update partial data of a user
-PATCH /users/:id
+'PATCH /users/:id' // update partial data of a user
 
-update entire data of a user
-PUT /users/:id
+'PUT /users/:id' // update entire data of a user
 
-delete a user
-DELETE /users/:id
+'DELETE /users/:id' // delete a user
 
-check what methods are supported to a resource
-OPTIONS /users
-OPTIONS /users/:id
+// check what methods are supported to a resource
+'OPTIONS /users'
+'OPTIONS /users/:id'
 ```
 
 ## Status Code
