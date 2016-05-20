@@ -49,7 +49,7 @@ Actions, because these define what you want to do. Below you find what each meth
 
 And below, complete examples, of requests:
 
-```http
+```js
 'GET /users' // return a list of users
 
 'GET /users/:id' // return data of a single user
