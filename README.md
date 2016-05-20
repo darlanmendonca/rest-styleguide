@@ -1,4 +1,4 @@
-# Truly Rest
+# Rest
 
 The purpose of this repo, is guide developers, to follow (really) a Restful API.
 
