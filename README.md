@@ -22,10 +22,10 @@ Are examples of resources:
 
 ## Params
 
-In many implementations, you will define a resource(url), where part of this is a variable value. We call this parameter, or just param. For e.g., in resource /users/233, the value 233 is a value from param id. The definitiion of this in code, is anything like this:
+In many implementations, you will define a resource(url), where part of this is a variable value. We call this parameter, or just param. For e.g., in resource /users/233, the value 233 is a value passed to a param id. The definitiion of this in code, is something like this:
 
-```
-/users/:id
+```js
+'/users/:id' // this url has a param called id
 ```
 
 ## Verbs(actions)
