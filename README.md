@@ -35,7 +35,9 @@ Actions, because these define what you want to do. Below you find what each meth
 
 
 #### GET
-Just read data, for e.g, when you want retrieve a list of users, or data from a single user. Example:
+Just read data, used for read list of single object. for e.g, when you want retrieve a list of users, or data from a single user.
+
+Example of get list of users:
 
 ```http
 GET /users
@@ -44,17 +46,45 @@ GET /users
 ```js
 // response 
 [
-    {name: 'Lorem'},
-    {name: 'Lero'},
+    {name: 'Lorem', id: a57b8a4},
+    {name: 'Lero', id: an97a94},
+    {name: 'Leroy', id: n23sb23},
 ];
 ```
 
+Example of get single user:
+
+```http
+GET /users/an97a94
+```
+
+```js
+// response 
+{
+    name: 'Lero', 
+    id: an97a94
+},
+```
+
+
 #### POST
+Used to create new things, e.g, create a new user, or add a new item to a entity, e.g., add a new book to a user
+
+Example of request to create a new user:
+
+```http
+POST /users
+```
+
+```js
+// request body
+{
+	name: 'Darlan'
+}
+```
 
 
 ```js
-'POST' // used to create new things, e.g, create a new user, or add a new item to a entity, e.g., add a new book to a user.
-
 'PATCH' // used to update partial data from a entity, e.g., update the lastname of an user, or just a email.
 
 'PUT' // used to update all data from a entity
