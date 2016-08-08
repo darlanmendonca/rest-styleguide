@@ -30,12 +30,29 @@ In many implementations, you will define a resource(url), where part of this is 
 
 ## Verbs(actions)
 
-Verbs are the http methods. You can think of them as 'actions'.
+Verbs just be http methods. You can think of them as 'actions'.
 Actions, because these define what you want to do. Below you find what each method is used in Restful API's
 
-```js
-'GET' // just read data, for e.g, when you want retrieve a list of users, or data from a single user
 
+#### GET
+Just read data, for e.g, when you want retrieve a list of users, or data from a single user. Example:
+
+```http
+GET /users
+```
+
+```js
+// response 
+[
+    {name: 'Lorem'},
+    {name: 'Lero'},
+];
+```
+
+#### POST
+
+
+```js
 'POST' // used to create new things, e.g, create a new user, or add a new item to a entity, e.g., add a new book to a user.
 
 'PATCH' // used to update partial data from a entity, e.g., update the lastname of an user, or just a email.
