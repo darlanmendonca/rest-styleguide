@@ -35,4 +35,4 @@ Every time, you will need pass variables to url, but they variables dont be requ
 Note, differente from url params, query strings dont be required in url, you pass when you need. And the advantage of their, is make a resource, in this case, users, have a different behavior on reply us.
 
 
-see next, [methods]()
+see next, [methods](https://github.com/darlanmendonca/rest-styleguide/blob/master/methods.md)
