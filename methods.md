@@ -1,4 +1,4 @@
-## method (action, verbs)
+## Method (action, verbs)
 
 In rest, is called verbs. Verbs just be http methods. They offer a way to reuse a resource, in different ways. 
 Think in methods like the definition of action what you want do with resource.

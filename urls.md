@@ -1,4 +1,4 @@
-## urls (resources)
+## Urls (resources)
 
 Technically, called resources, because each url need provide an access to resource. But simplifying, they are urls :D
 
