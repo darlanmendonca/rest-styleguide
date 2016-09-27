@@ -13,7 +13,7 @@ Basically, we can classify status codes in groups, where each group be:
 
 I love this reference about http status code, [https://http.cat/](https://http.cat/), and I suggest you to see it.
 
-##### 200 - OK
+### 200 - OK
 Used to when your request was understood, and you will get what you requested.
 
 ```http
@@ -35,7 +35,7 @@ Status Code: 200 - OK
 }
 ```
 
-##### 201 - Created
+### 201 - Created
 Used after to tell if your request create anything in the server. Example below, try create a user
 
 ```http
@@ -61,4 +61,23 @@ Status Code: 201 - Created
 {
     id: 'a57b8a4'
 }
+```
+
+### 204 - Not content
+The server understood what you requested, but not have data to be returned. Example, not have users yet.
+
+```http
+GET /users
+```
+
+<img src="https://http.cat/204" alt="204 - No content" width="500">
+
+```http
+# response header
+Status Code: 204 - No content
+```
+
+```js
+// response body
+[]
 ```
