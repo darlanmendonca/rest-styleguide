@@ -1,3 +1,7 @@
+## Important
+
+The http protocol has many status, but hardly we use or know many. Below I list some that I recommend, if you miss any, please make a pull request or issue.
+
 ## Status code - 2xx
 
 Success status, server understand and will make what you want
