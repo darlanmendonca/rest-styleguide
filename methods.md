@@ -99,4 +99,10 @@ In your application, you probaly have differentes actions to entities. Users can
 OPTIONS /users
 ````
 
+```http
+# response header
+Allow:GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH
+```
+
+
 see next, [status code](https://github.com/darlanmendonca/rest-styleguide/blob/master/status_code.md)

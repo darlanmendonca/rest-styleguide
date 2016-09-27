@@ -6,28 +6,28 @@ Technically, called resources, because each url need provide an access to resour
 If you read a url and dont understand, or if you can't remember in your mind, you probably didn't choose a good name. 
 Each url need be clear, to easy understanding. Take care to named your resources, they are the hearth of your API. 
 
-should do something with users
 ```http
+# should do something with users
 /users
 ```
 
-should do something with a user identified by id 233 
 ```http
+# should do something with a user identified by id 233 
 /users/233 
 ```
 
-should make something with books of user 223
 ```http
+# should make something with books of user 223
 /users/223/books
 ```
 
-should do something with partners
 ```http
+# should do something with partners
 /partners
 ```
 
-should do something with products
 ```http
+# should do something with products
 /products
 ```
 
@@ -37,8 +37,8 @@ In many implementations, you will define a url, where part of this is a variable
 For e.g., in url /users/233, the value 233 is a value passed to a param. The definitiion of this in code, is something like this:
 
 
-this url has a param called id
 ```
+# this url has a param called id
 /users/:id
 ```
 
