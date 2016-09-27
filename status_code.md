@@ -9,6 +9,7 @@ Basically, we can classify status codes in groups, where each group be:
 3xx - redirection, further action may be needed
 4xx - client error (the client is your), anything wrong, not found or not allowed by example.
 5xx - an error occur in server
+```
 
 I love this reference about http status code, [https://http.cat/](https://http.cat/), and I suggest you to see it.
 
