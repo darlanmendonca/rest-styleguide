@@ -81,3 +81,29 @@ Status Code: 204 - No content
 // response body
 []
 ```
+
+### 206 - Partial content
+Let's suppose our lists by default display max 10 items for response. As we know that there are more elements to be displayed? This status code, is fot that.
+
+```http
+GET /users
+```
+
+<img src="https://http.cat/206" alt="206 - Partial content" width="500">
+
+```http
+# response header
+Status Code: 206 - Partial content
+```
+
+```js
+// response body
+[
+    {
+        id: 'a57b8a4',
+        name: 'Darlan'
+    },
+    // nine items max 
+]
+```
+
