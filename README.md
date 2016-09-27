@@ -1,6 +1,9 @@
 # rest-styleguide
 
-Why is so hard make an HTTP API, following Rest? Serious, I'm feel frustrated when I found an api's that follow custom or many patterns (where the pattern is dont have pattern). Restful try get what is really important on HTTP protocol, and offer to you, but they have things rarely used too.
+Why is so hard make an HTTP API, following Rest? 
+Serious, I'm feel frustrated when I found an api's that follow custom or many patterns (where the pattern is dont have a pattern). 
+Restful try get what is really important on HTTP protocol, and offer to you, but they have things rarely used too.
+
 So this repo is made it to join developers, from different skills and languages, to try:
 
 - simplify the understanding of an restful api
