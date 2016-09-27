@@ -21,4 +21,4 @@ For now, the links below are what I believe is important to understand and make 
 And finally, practical examples:
 
 - [2xx](https://github.com/darlanmendonca/rest-styleguide/blob/master/status_code_2xx.md)
-- [4xx](https://github.com/darlanmendonca/rest-styleguide/blob/master/status_code_2xx.md)
+- [4xx](https://github.com/darlanmendonca/rest-styleguide/blob/master/status_code_4xx.md)
