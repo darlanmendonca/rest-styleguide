@@ -14,13 +14,13 @@ Basically, we can classify status codes in groups, where each group be:
 I love this reference about http status code, [https://http.cat/](https://http.cat/), and I suggest you to see it.
 
 ##### 200 - OK
-Used to when your request is understanding, and you will receive what you request.
+Used to when your request was understood, and you will get what you requested.
 
 ```http
 GET /users/a57b8a4
 ```
 
-![200 - OK](https://http.cat/200)
+<img src="https://http.cat/200" alt="200 - OK" style="width: 500px">
 
 ```http
 # response header
@@ -49,7 +49,7 @@ POST /users
 }
 ```
 
-![201 - Created](https://http.cat/201)
+<img src="https://http.cat/201" alt="200 - Created" style="width: 500px">
 
 ```http
 # response header
