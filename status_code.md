@@ -20,7 +20,7 @@ Used to when your request was understood, and you will get what you requested.
 GET /users/a57b8a4
 ```
 
-<img src="https://http.cat/200" alt="200 - OK" style="width: 500px">
+<img src="https://http.cat/200" alt="200 - OK" width="500">
 
 ```http
 # response header
@@ -49,7 +49,7 @@ POST /users
 }
 ```
 
-<img src="https://http.cat/201" alt="200 - Created" style="width: 500px">
+<img src="https://http.cat/201" alt="200 - Created" width="500">
 
 ```http
 # response header
