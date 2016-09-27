@@ -20,17 +20,45 @@ Used to when your request is understanding, and you will receive what you reques
 GET /users/a57b8a4
 ```
 
+![200 - OK](https://http.cat/200)
+
 ```http
 # response header
 Status Code: 200 - OK
 ```
 
-![200 - OK](https://http.cat/200)
-
 ```js
 // response body
 {
     name: 'Darlan', 
+    id: 'a57b8a4'
+}
+```
+
+##### 201 - Created
+Used after to tell if your request create anything in the server. Example below, try create a user
+
+```http
+POST /users
+```
+
+```js
+// request body
+{
+    name: 'Darlan'
+}
+```
+
+![201 - Created](https://http.cat/201)
+
+```http
+# response header
+Status Code: 201 - Created
+```
+
+```js
+// response body
+{
     id: 'a57b8a4'
 }
 ```
