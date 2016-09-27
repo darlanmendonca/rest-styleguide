@@ -101,7 +101,7 @@ OPTIONS /users
 
 ```http
 # response header
-Allow:GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH
+Allow: GET, HEAD, POST, PUT, DELETE
 ```
 
 
