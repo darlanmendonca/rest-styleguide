@@ -6,7 +6,7 @@ Restful try get what is really important on HTTP protocol, and offer to you, but
 
 So this repo is made it to join developers, from different skills and languages, to try:
 
-- simplify the understanding of an restful api
+- simplify the understanding of an rest api
 - define a styleguide
 - show practical examples of real use and code implementation
 
