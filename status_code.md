@@ -25,7 +25,7 @@ GET /users/a57b8a4
 Status Code: 200 - OK
 ```
 
-[200 - OK](https://http.cat/200)
+![200 - OK](https://http.cat/200)
 
 ```js
 // response body
